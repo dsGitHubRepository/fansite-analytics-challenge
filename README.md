@@ -6,4 +6,3 @@
 5. [Feature 4](README.md#comments-on-feature-4)
 6. [Summary](README.md#summary)
 7. [Additional Comments](README.md#additional-comments)
-8. 
