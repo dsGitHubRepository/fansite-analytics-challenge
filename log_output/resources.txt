@@ -1,0 +1,10 @@
+/mdss/ped/acs/SDP.ps 
+/shuttle/missions/sts-53/movies/sts-53-launch.mpg 
+/cgi-bin/imagemap/countdown70?252,271 
+/cgi-bin/imagemap/countdown?87,214 
+/htbin/wais.pl?fitz 
+/cgi-bin/imagemap/countdown?100,205 
+/htbin/wais.pl?gift+gal 
+/history/apollo/sa-2/ 
+/cgi-bin/imagemap/countdown70?397,291 
+/htbin/wais.pl?BURAN 
