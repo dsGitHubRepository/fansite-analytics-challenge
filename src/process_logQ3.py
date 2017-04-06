@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import datetime
 
-pathinput='/home/miraj/HgLvPrgLng/PYTHON/Programs/Q2/DATA/log.txt'
+pathinput='./log_input/log.txt'
 # wc -l 4400644
 datainput=open(pathinput,'r')
 
@@ -29,6 +29,10 @@ for line in range(NoL):
 datainput.close()
 
 tstpList=tstpList1[0:np.size(tstpList1):200]
+# here I am choosing datastep delta=200 for time managable calculation. higher steps produce results that is more spaced
+# in real time. default delta=1; More time managed approach would be to filter input initially only for http reply code '200'
+# please check insight_testsuite/your-own-test/*.py
+
 tstpListNoDup=list(set(tstpList))     # Remove duplicate item from list
 tstpListNoDup.sort()    # sort now; since removing duplicate charges real time data
 
@@ -56,7 +60,7 @@ for line1 in range(np.size(tstpListNoDup)):
     
 freq=list(map(int, freq1)) 
 
-pathoutbusytime='/home/miraj/HgLvPrgLng/PYTHON/Programs/Q3/DATA/hours.txt'
+pathoutbusytime='./log_output/hours.txt'
 dataouthrs=open(pathoutbusytime,'wb')                                
 
 for ifrq in range(10):
