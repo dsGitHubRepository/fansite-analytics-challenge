@@ -31,7 +31,7 @@ Above three parameters can be varied to check the pattern.
 
 # Summary
 
-The coding challenge was really a great fun !
+The coding challenge was an excellent path to analyze a real world data analysis of server log files. 
 
 
 
