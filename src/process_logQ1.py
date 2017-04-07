@@ -1,5 +1,6 @@
 # process_logQ1.py
 
+import numpy as np
 from collections import Counter
 
 pathinput='./log_input/log.txt'
@@ -16,7 +17,12 @@ for line in range(NoL):
     ipList.append(ipstr)
     
 datainput.close()
-ipCollcount=Counter(ipList)   
+
+# ipList1=ipList[0:np.size(ipList):10]  # data steps for quick check; default step 1
+
+ipList1=ipList
+
+ipCollcount=Counter(ipList1)   
 ipActive10=Counter(ipCollcount).most_common(10)
 
 
