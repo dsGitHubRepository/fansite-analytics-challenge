@@ -24,4 +24,7 @@ only period having successfull http reply code "200"; but my analysis did not li
 without this restriction.
 
 # Feature 4
-Since features 4 analysis is related to three consecutive failed login attemps over a period of 20 seconds inorder to block further attempts to reach the site from the same IP for the next 5 minutes.  
+Since feature 4 analysis is related to multiple consecutive failed login attemps (e.g.; 3 or 4 attempts) over a period of few seconds ( e.g.; 5 sec or 20 sec etc.) inorder to block further attempts to reach the site from the same IP address over 5 minutes. For feature 4 analysis I have varied no of consecutive failed attemps (CFS L60) from 2 to 5 over a few seconds (timeStep L80) followed by a time block of 5 minutes (timestepBlock L94).
+
+Above three parameters can be varied. I submitted ./log_output/blocked.txt for  4 consecutive failed attemp for 5 seconds so that it was blocked for next 5 minutes.
+
