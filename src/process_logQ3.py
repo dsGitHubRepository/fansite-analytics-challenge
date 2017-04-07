@@ -4,17 +4,11 @@ import numpy as np
 import pandas as pd
 import datetime
 
-pathinput='./log_input/log.txt'
-# wc -l 4400644
+pathinput='./log_input/log.txt' 
 datainput=open(pathinput,'r')
 
-NoL=4400644 # 4400644   # 4400644
+NoL=4400644 #  wc -l log.txt 4400644
 
-# since all the log in hosts from -0400 time zone
-# No missing timestamp 
-# No missing ip 
-
-nc=0
 lprog=int(NoL/10)
 
 tstpList1=[]
