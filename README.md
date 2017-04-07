@@ -27,5 +27,5 @@ Feature 3 is the most time consuming analysis where top 10 busiest 60 minutes pe
 
 Since feature 4 analysis is related to multiple consecutive failed login attemps (e.g.; 3 or 4 attempts) over a period of few seconds ( e.g.; 5 sec or 20 sec etc.) inorder to block further attempts to reach the site from the same IP address over 5 minutes. For feature 4 analysis was carried over no of consecutive failed login attemps (CFS L60) from 2 to 5 over a few seconds (timeStep L80) followed by a time block of 5 minutes (timestepBlock L94).
 
-Above three parameters can be varied to check the pattern. I submitted ./log_output/blocked.txt for  4 consecutive failed attempts for 5 seconds so that it was blocked for next 5 minutes.
+Above three parameters can be varied to check the pattern. Submitted output ./log_output/blocked.txt for  4 consecutive failed attempts for 5 seconds so that it was blocked for next 5 minutes.
 
