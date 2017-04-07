@@ -9,7 +9,7 @@
 
 # Project Overview
 
-Four features of the data challenge has been submitted as four sepearte solution. Feature 3 analysis has been carried over with data steps to check whetehr the output is meaningful to real time analytics of server log file. For a quicker check for the solution a resonable wide steps in the input data can be chosen to satisfy the scalability of the code produced in this submission.
+Four features of the data challenge has been submitted as four sepearte solution. Feature 3 analysis has been carried over with data steps to check whether the output is meaningful to real time analysis of server log data. For a quicker check for the solution a resonable wide steps in the input data can be chosen to satisfy the scalability of the code produced in this submission.
 
 # Feature 1
 
@@ -31,7 +31,10 @@ Above three parameters can be varied to check the pattern.
 
 # Summary
 
-The coding challenge was an excellent path to analyze a real world data problem of server log files and be familiar with data analysis as a data engineer to bridge the gap between academic research data analysis to industrial data analysis or business data analysis. 
+The coding challenge was an excellent path to analyze a real world data problem of server log data and be familiar with real world data analysis as a data engineer to bridge the gap between academic research data analysis to business data analysis. 
+
+Please note that the directory output did not quiet copy the ./log_out/*.txt to the desired folder; however I strongly request to check my submission. I am working on this part to bridge the gap!
+
 
 
 
