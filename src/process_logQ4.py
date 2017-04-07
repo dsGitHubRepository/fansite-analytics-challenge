@@ -11,7 +11,7 @@ pathinput='./log_input/log.txt'
 datainput=open(pathinput,'r')
 
 # wc -l 4400644
-NoL=440064 # 4400644
+NoL=4400644 # 4400644
 
 ipList1=[]
 httpreplyList1=[]
@@ -68,12 +68,11 @@ for ncomp, h in groupby(enumerate(httpIndex401), lambda (i, x): i-x):
             ipwithIndex=CountMostcommon[0] 
             FofR=ipwithIndex[1]    # to make sure taht successive '401' from the same ip; 
             ipcheck1=ipwithIndex[0]
-            NOSFA=4 # NOSFA == No of consecutive failed attempts
             if ipSize==FofR:   # test for ip uniqueness
-                if FofR==NOSFA:
+                if FofR==CFS:
                     t1index=Indexhttpgroup[0] 
                     time1=tstmpList1[t1index]   # timestamp for 1st failed attemp
-                    t2index=Indexhttpgroup[NOSFA-1]   
+                    t2index=Indexhttpgroup[CFS-1]   
                     time2=tstmpList1[t2index]   # timestamp for Nth=(NOSFA)-th failed attemp
                     timeDiff=datetime.datetime.strptime(time2, FMT) - datetime.datetime.strptime(time1,FMT)
                     timeDiffSec=timeDiff.seconds
@@ -97,6 +96,10 @@ for ncomp, h in groupby(enumerate(httpIndex401), lambda (i, x): i-x):
                                     print  ipList1[icode],"--",tstmpList1[icode],";",httpreplyList1[icode]
                                     datablockedout.write('%s %s %s %s %s %s\n' % (ipList1[icode],"--",\
                                     tstmpList1[icode],";",rsrcList[icode], httpreplyList1[icode]))
-                                                                                                        
+                                    
+                                    
+                                
 datablockedout.close()                               
                             
+                            
+
