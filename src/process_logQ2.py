@@ -25,8 +25,6 @@ for line in range(NoL):
 # Remove duplicate item from the list                        
 rsrcNodupl=list(set(rsrcList))
 
-# most timeconsuming part of the code
-
 lprog=np.size(rsrcNodupl)/10
 bandwidthList=[]
 bandwidthList=[]
