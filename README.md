@@ -15,7 +15,7 @@ Four features of the data challenge has been submitted as four sepearte solution
 
 Feature 1 analysis was implemented and tested to sort out the top 10 most active hosts in descending order.
 
-# Feature 1
+# Feature 2
 
 For Feature 2 analysis to identify the top 10 resources that consumes the most bandwidth on the site; avearge bytes for individual resources calculated to sort out the top 10 resources in descending order.
 
