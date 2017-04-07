@@ -51,10 +51,10 @@ dataoutRsrc=open(pathoutRsrc,'wb')
 for irsrc in range(10):
     RsrcMaxbw=max(bandwListint)
     idxMaxbw=pd.Series(bandwListint).idxmax()
-    topMostRsrc=rsrcNodupl[idxMaxbw+irsrc]     # THIS LINE ME =rsrcNodupl[idxMaxbw+1]
+    topMostRsrc=rsrcNodupl[idxMaxbw+irsrc]     # since the top resources was not dropped in loop iteration
     dataoutRsrc.write('%s \n' % topMostRsrc)
     print "\n top", irsrc+1, ":", topMostRsrc, "bandwidth : ", RsrcMaxbw
-    bandwListint.remove(max(bandwListint))
+    bandwListint.remove(max(bandwListint))     # max bandwidth was dropped during iteration
        
 dataoutRsrc.close()
 
