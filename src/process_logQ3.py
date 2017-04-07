@@ -29,11 +29,11 @@ tstpList=tstpList1[0:np.size(tstpList1):delta]
 # please check results at /fansite-analytics-challenge/insight_testsuite/tests/test_features/log_output/hours.txt for very wide datastep
 # delta=40000; 
 
-tstpListNoDup=list(set(tstpList))     # duplicate items has been removed
-tstpListNoDup.sort()    # sort now; since removing duplicate charges real time data
+tstpListNoDup=list(set(tstpList))     # remove duplicate items 
+tstpListNoDup.sort()   
 
-# Now to set 60 minute time window and get frequency for each unique(unduplicatedlist) timestamp
-# this is the most time consuming run
+# set 60 minute time window and get frequency for each unique(unduplicatedlist) timestamp
+# 
 freq1=[]
 FMT= '%d/%b/%Y:%H:%M:%S'
 
@@ -52,10 +52,8 @@ for line1 in range(np.size(tstpListNoDup)):
                 tt=timeDiff.seconds 
                 if tt <= 3600 :   # 60 min = 3600 s
                     n=n+1   # count freq for 60 min window
-    freq1.append(n)
-    
+    freq1.append(n)    
 freq=list(map(int, freq1)) 
-
 pathoutbusytime='./log_output/hours.txt'
 dataouthrs=open(pathoutbusytime,'wb')                                
 
