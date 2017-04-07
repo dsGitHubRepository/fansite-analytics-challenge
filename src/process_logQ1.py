@@ -1,13 +1,11 @@
 # process_logQ1.py
 
-import numpy as np
 from collections import Counter
 
 pathinput='./log_input/log.txt'
-# wc -l 4400644
 datainput=open(pathinput,'r')
 
-NoL=4400644 # 4400644
+NoL=4400644 # # wc -l log.txt 4400644
 
 ipList=[]
 for line in range(NoL):
