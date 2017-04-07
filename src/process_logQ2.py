@@ -27,7 +27,6 @@ rsrcNodupl=list(set(rsrcList))
 
 lprog=np.size(rsrcNodupl)/10
 bandwidthList=[]
-bandwidthList=[]
 for lsrc1 in range(np.size(rsrcNodupl)):
     if lsrc1%lprog == 0:  
         print "progress : ", lsrc1/lprog   
