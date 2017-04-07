@@ -31,7 +31,7 @@ Above three parameters can be varied to check the pattern.
 
 # Summary
 
-The coding challenge was an excellent path to analyze a real world data analysis of server log files. 
+The coding challenge was an excellent path to analyze a real world data problem of server log files and be familiar with data analysis as a data engineer to bridge the gap between academic research data analysis to industrial data analysis or business data analysis. 
 
 
 
