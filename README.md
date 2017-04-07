@@ -9,7 +9,7 @@
 
 # Project Overview
 
-Four features of the data challenge has been submitted as four sepearte solution. For feature 3 challenge since the analysis is lengthy in time consideration; hence tests has been carried over with steps to see whetehr the output is meaningful. For a quicker check for the solution a resonable wide steps in the input data can be chosen to satisfy the scalability of the code produced in this submission.
+Four features of the data challenge has been submitted as four sepearte solution. Feature 3 analysis has been carried over with data steps to check whetehr the output is meaningful to real time analytics of server log file. For a quicker check for the solution a resonable wide steps in the input data can be chosen to satisfy the scalability of the code produced in this submission.
 
 # Feature 1
 
@@ -17,11 +17,11 @@ Feature 1 analysis was implemented and tested to sort out the top 10 most active
 
 # Feature 2
 
-For Feature 2 analysis to identify the top 10 resources that consumes the most bandwidth on the site; avearge bytes for individual resources calculated to sort out the top 10 resources in descending order.
+Feature 2 analysis to identify the top 10 resources that consumes the most bandwidth on the site; avearge bandwidth for individual resources was calculated to sort out the top 10 in descending order.
 
 # Feature 3
 
-Feature 3 is the most time consuming analysis where top 10 busiest 60 minutes period identified by the startup timestamp. This analysis might be done only for periods having successfull http reply code "200"; but my analysis did not limit the computation with http reply "200"; it was done without this restriction.
+Feature 3 is the most time consuming analysis where top 10 busiest 60 minutes period was identified and reported as ./log_output/hours.txt. This analysis might be done only for periods having successfull http reply code "200"; but my analysis did not limit the computation with http reply "200"; it was done without this restriction.
 
 # Feature 4
 
