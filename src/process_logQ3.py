@@ -22,13 +22,14 @@ for line in range(NoL):
         
 datainput.close()
 
-tstpList=tstpList1[0:np.size(tstpList1):200]
-# here I am choosing datastep delta=200 for time managable calculation. higher steps produce results that is more spaced
-# in real time. default delta=1; More time managed approach would be to filter input initially only for http reply code '200'
-# please check for delta=40000; the results hours.txt at 
-# /fansite-analytics-challenge/insight_testsuite/tests/test_features/log_output/hours.txt
+delta=200
+tstpList=tstpList1[0:np.size(tstpList1):delta]
+# here I am choosing datastep delta=200 for time managable analysis. Higher steps produce results that is more spaced
+# in real time. default delta=1; More time managed approach would be useful to filter input initially only for http reply code '200'
+# please check results at /fansite-analytics-challenge/insight_testsuite/tests/test_features/log_output/hours.txt for very wide datastep
+# delta=40000; 
 
-tstpListNoDup=list(set(tstpList))     # Remove duplicate item from list
+tstpListNoDup=list(set(tstpList))     # duplicate items has been removed
 tstpListNoDup.sort()    # sort now; since removing duplicate charges real time data
 
 # Now to set 60 minute time window and get frequency for each unique(unduplicatedlist) timestamp
