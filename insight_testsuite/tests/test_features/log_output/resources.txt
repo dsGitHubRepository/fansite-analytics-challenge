@@ -1,0 +1,10 @@
+/shuttle/missions/sts-53/movies/sts-53-launch.mpg 
+/history/apollo/apollo-1/ 
+/cgi-bin/imagemap/countdown?322,273 
+/shuttle/missions/sts-71/movies/sts-71-hatch-hand-group.mpg 
+/cgi-bin/imagemap/countdown?102,107 
+/history/apollo/apollo-14/movies/ 
+/cgi-bin/imagemap/countdown?113,108 
+/cgi-bin/imagemap/countdown?106,173 
+/~downs/home.html 
+/shuttle/resources/orbiters/pathfinder.html 
