@@ -5,7 +5,7 @@ from collections import Counter
 pathinput='./log_input/log.txt'
 datainput=open(pathinput,'r')
 
-NoL=4400644 # # wc -l log.txt 4400644
+NoL=4400644 # wc -l log.txt 4400644
 
 ipList=[]
 for line in range(NoL):
