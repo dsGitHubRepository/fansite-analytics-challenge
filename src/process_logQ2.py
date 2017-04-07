@@ -2,14 +2,11 @@
 
 import numpy as np
 import pandas as pd
-from collections import Counter
-import operator
 
 pathinput='./log_input/log.txt'
-# wc -l 4400644
 datainput=open(pathinput,'r')
 
-NoL=4400644  # 4400644  # 4400644
+NoL=4400644  # wc -l log.txt 4400644
 
 byteList=[]
 rsrcList=[]
@@ -59,7 +56,7 @@ for irsrc in range(10):
     idxMaxbw=pd.Series(bandwListint).idxmax()
     topMostRsrc=rsrcNodupl[idxMaxbw+irsrc]     # THIS LINE ME =rsrcNodupl[idxMaxbw+1]
     dataoutRsrc.write('%s \n' % topMostRsrc)
-    #print "\n top", irsrc+1, ":", topMostRsrc, "bandwidth : ", RsrcMaxbw
+    print "\n top", irsrc+1, ":", topMostRsrc, "bandwidth : ", RsrcMaxbw
     bandwListint.remove(max(bandwListint))
        
 dataoutRsrc.close()
