@@ -10,7 +10,7 @@ import datetime
 pathinput='./log_input/log.txt'
 datainput=open(pathinput,'r')
 
-# wc -l 4400644
+# wc -l log.txt 4400644
 NoL=4400644 # 4400644
 
 ipList1=[]
@@ -91,7 +91,7 @@ for ncomp, h in groupby(enumerate(httpIndex401), lambda (i, x): i-x):
                                 timeDelta=datetime.datetime.strptime(time1_304, FMT) - datetime.datetime.strptime(time2,FMT)
                                 timeDeltaseconds=timeDelta.seconds
                                 #print timeDeltaseconds
-                                timestepBlock=300   # change later to 5 minutes
+                                timestepBlock=300   # 5 minutes etc
                                 if timeDeltaseconds<=timestepBlock:
                                     print  ipList1[icode],"--",tstmpList1[icode],";",httpreplyList1[icode]
                                     datablockedout.write('%s %s %s %s %s %s\n' % (ipList1[icode],"--",\
