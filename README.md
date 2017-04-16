@@ -4,8 +4,6 @@
 3. [Feature 2](README.md#comments-on-feature-2)
 4. [Feature 3](README.md#comments-on-feature-3)
 5. [Feature 4](README.md#comments-on-feature-4)
-6. [Summary](README.md#summary)
-
 
 # Project Overview
 
@@ -28,12 +26,6 @@ Feature 3 is the most time consuming analysis where top 10 busiest 60 minutes pe
 Since feature 4 analysis is related to multiple consecutive failed login attemps (e.g.; 3 or 4 attempts) over a period of few seconds ( e.g.; 5 sec or 20 sec etc.) inorder to block further attempts to reach the site from the same IP address over 5 minutes. For feature 4 analysis was carried over 4 consecutive failed login attemps (CFS L60) for  5 seconds (timeStep L80) followed by a time block of 5 minutes (timestepBlock L94).
 
 Above three parameters can be varied to check the pattern. 
-
-# Summary
-
-The coding challenge was an excellent path to analyze a real world data problem of server log data and be familiar with real world data analysis as a data engineer to bridge the gap between academic research data analysis to business data analysis. 
-
-Please note that the directory output did not quiet copy the ./log_out/*.txt to the desired folder; however I strongly request to check my submission. I am working on this part to bridge the gap!
 
 
 
