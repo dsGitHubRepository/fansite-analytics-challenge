@@ -1,42 +1,26 @@
 # process_logQ1.py
 
-import numpy as np
-from collections import Counter
-
-pathinput='./log_input/log.txt'
-datainput=open(pathinput,'r')
-
 NoL=4400644 # wc -l log.txt 4400644
 
-ipList=[]
-for line in range(NoL):
-    linetxt=datainput.readline()
-    linetxtSplit=linetxt.split()
-    host=linetxtSplit[0]
-    ipstr=str(host)
-    ipList.append(ipstr)
-    
-datainput.close()
+from collections import Counter
+data = open('../log_input/log.txt', 'r')
 
-# ipList1=ipList[0:np.size(ipList):10]  # data steps for quick check; default step 1
+ActiveHost = []
 
-ipList1=ipList
+for i in range(200000):
+    l1 = data.readline().split('- -')[0]
+    ActiveHost.append(l1)
+data.close()
+print(ActiveHost[0:2])
 
-ipCollcount=Counter(ipList1)   
-ipActive10=Counter(ipCollcount).most_common(10)
+top10 = Counter(ActiveHost).most_common(10)
 
+file = open('../log_output/top.txt', 'w')
 
-pathTop10host='./log_output/hosts.txt'
-dataTop10host=open(pathTop10host,'wb')
+for i in range(10):
+    ip = top10[i][0]
+    freq = top10[i][1]
+    print(type(freq))
+    file.write('%s,%d\n' % (ip,freq))
 
-for ipline in range(10):
-    ipAcMost=ipActive10[ipline]
-    hostname=ipAcMost[0]
-    freq=ipAcMost[1]
-    print hostname,",", freq
-    dataTop10host.write('%s,%d\n' % (hostname,freq))
-
-dataTop10host.close()
-
-
-
+file.close()
