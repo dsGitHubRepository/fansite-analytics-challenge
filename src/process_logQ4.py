@@ -18,7 +18,7 @@ httpreplyList1=[]
 tstmpList1=[]
 rsrcList=[]
 
-nc=0
+nc=0  # to many ifs does not look good !!
 for line1 in range(NoL):
     linetxt1=datainput.readline()
     linetxtSplit1=linetxt1.split()
